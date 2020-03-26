@@ -162,6 +162,28 @@ li {
 }
 
 #board {
-  width: 500px;
-  background-color: green;
+  width: 100%;
+  max-width: $mobile;
+  padding: 0.5rem;
+  background-color: grey;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  .box {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  @media(min-width: $tablet) {
+    max-width: $tablet;
+
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+  }
 }
