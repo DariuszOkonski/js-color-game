@@ -23,8 +23,30 @@
 </head>
 
 <body>
-  <h1>Hello world - with simple PWA support!</h1>
 
+  <header id="header">
+    <h2 class="title">Color Game</h2>
+    <h4 class="clue">Guess color displayed below</h4>
+    <h1 class="color-number">RGB(<span>0</span>,<span>1</span>,<span>2</span>)</h1>
+  </header>
+
+  <nav id="navigation">
+    <div class="list-container container">
+      <ul class="left-list">
+        <li class="play-again" data-btn="play-again">new colors</li>
+        <li data-check="check"></li>
+      </ul>
+      <ul class="right-list">
+        <li class="option active" data-btn="easy">easy</li>
+        <li class="option" data-btn="medium">medium</li>
+        <li class="option" data-btn="hard">hard</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="board" class="container" data-container="boxes-container">
+
+  </main>
   <script src="js/main.js"></script>
 </body>
 
