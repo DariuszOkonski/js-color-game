@@ -171,10 +171,11 @@ li {
   gap: 1rem;
 
   .box {
-    background-color: green;
+    // background-color: green;
     width: 100px;
     height: 100px;
     border-radius: 10px;
+    cursor: pointer;
   }
 
   @media(min-width: $tablet) {
