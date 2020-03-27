@@ -7,6 +7,7 @@ class Engine {
     document.querySelector('[data-btn="easy"]').addEventListener('click', () => this.setLevel(3));
     document.querySelector('[data-btn="medium"]').addEventListener('click', () => this.setLevel(6));
     document.querySelector('[data-btn="hard"]').addEventListener('click', () => this.setLevel(9));
+    document.querySelectorAll('.option').forEach(active => active.addEventListener('click', this.setActiveLevel))
 
     this.boxesContainer = document.querySelector('[data-container="boxes-container"]');
     this.render();
@@ -19,7 +20,6 @@ class Engine {
       const div = document.createElement('div');
       div.classList.add('box')
       div.style.backgroundColor = `rgb(${box.red}, ${box.green}, ${box.blue})`;
-      console.log(div)
       this.boxesContainer.appendChild(div)
     })
   }
@@ -39,10 +39,14 @@ class Engine {
     this.render();
   }
 
-  runEngine() {
-
-    console.log('run engine')
+  setActiveLevel() {
+    document.querySelectorAll('.option').forEach(active => {
+      active.classList.remove('active')
+      console.log(active.classList)
+    })
+    this.classList.add('active');
   }
+
 }
 
 export default Engine;
