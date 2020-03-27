@@ -15,6 +15,7 @@ if ('serviceWorker' in navigator) {
 }
 
 // place your code below
-
-import runEngine from './engine';
-runEngine();
+// ==============================================
+import Engine from './engine';
+const engine = new Engine();
+engine.runEngine();
