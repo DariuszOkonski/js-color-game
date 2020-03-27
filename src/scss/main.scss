@@ -46,8 +46,8 @@ li {
 }
 
 #header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   text-align: center;
   color: $light-gray;
   background-color: $blue;
@@ -55,8 +55,8 @@ li {
 
   .title {
     letter-spacing: 1px;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
   }
 
   .clue {
@@ -83,21 +83,21 @@ li {
   }
 
   @media(orientation: landscape) and (min-width: $tablet-large) {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
     .title {
       letter-spacing: 1px;
       margin-bottom: 1rem;
-      font-size: 1.2rem;
-    }
-
-    .clue {
       font-size: 1rem;
     }
 
+    .clue {
+      font-size: 0.8rem;
+    }
+
     .color-number {
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
   }
 }
