@@ -16,6 +16,3 @@ class Box {
 }
 
 export default Box;
-
-// visibility: visible;
-// visibility: hidden;

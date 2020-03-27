@@ -18,4 +18,3 @@ if ('serviceWorker' in navigator) {
 // ==============================================
 import Engine from './engine';
 const engine = new Engine();
-engine.runEngine();
