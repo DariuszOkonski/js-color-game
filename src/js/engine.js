@@ -22,9 +22,6 @@ class Engine {
   render() {
     this.renderBoxes();
     this.renderColorsToFind();
-
-    // console.clear();
-    // console.log(this)
   }
 
   renderColorsToFind() {
@@ -60,7 +57,6 @@ class Engine {
       const div = document.createElement('div');
       div.classList.add('box');
       div.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-      console.log(div)
       this.boxesContainer.appendChild(div);
     }
   }
@@ -70,7 +66,6 @@ class Engine {
     const red = Number(e.target.getAttribute('data-red'));
     const green = Number(e.target.getAttribute('data-green'));
     const blue = Number(e.target.getAttribute('data-blue'));
-
 
     if (this.currentColor.red === red && this.currentColor.green === green && this.currentColor.blue === blue) {
       this.renderWin(this.currentColor.red, this.currentColor.green, this.currentColor.blue);

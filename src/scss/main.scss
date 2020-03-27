@@ -1,8 +1,6 @@
 @import "_normalize";
 @import "_variables";
 
-
-
 *,
 *:before,
 *:after {
@@ -171,7 +169,6 @@ li {
   gap: 1rem;
 
   .box {
-    // background-color: green;
     width: 100px;
     height: 100px;
     border-radius: 10px;
