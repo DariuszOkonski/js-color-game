@@ -12,7 +12,7 @@ at heder by press colorful squares;
 - SCSS
 - Gulp
 
-# wtf-gulp-starter
+# gulp-starter
 
 `npm install -g gulp-cli`
 
